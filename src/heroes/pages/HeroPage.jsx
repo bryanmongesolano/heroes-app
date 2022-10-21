@@ -23,14 +23,14 @@ export const HeroPage = () => {
             <NavigateBackRow navigateBack={onNavigateBack} />
 
             <div className="row g-4">
-                <div className="col-sm-4">
+                <div className="col-sm-3" style={{zIndex: '2'}}>
                     <img
                         src={`/src/heroes/assets/heroes/${id}.jpg`}
                         alt={hero.superhero}
                         className="img-thumbnail animate__animated animate__flip"
                     />
                 </div>
-                <div className="col-sm-8">
+                <div className="col-sm-9 animate__animated animate__fadeIn" style={{zIndex: '1'}}>
                     <h3>{hero.superhero}</h3>
                     <ul className="list-group list-group-flush">
                         <li className="list-group-item">

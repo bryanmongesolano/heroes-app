@@ -19,12 +19,15 @@ export const HeroItem = ({
                         <img
                             src={heroImageUrl}
                             className="img-fluid rounded-start animate__animated animate__flipInY "
-                            style={{ height: '100%' }}
+                            style={{ height: '100%', zIndex: '2' }}
                             alt={superhero}
                         />
                     </div>
                     <div className="col-7">
-                        <div className="h-100 d-flex flex-column justify-content-between">
+                        <div
+                            className="h-100 d-flex flex-column justify-content-between animate__animated animate__fadeIn"
+                            style={{ zIndex: '1' }}
+                        >
                             <div
                                 className="card-body"
                                 style={{ height: 'fit-content' }}
@@ -33,7 +36,10 @@ export const HeroItem = ({
                                 <h6 className="card-subtitle fw-semibold text-muted mb-2">
                                     {alter_ego}
                                 </h6>
-                                <Link to={`/hero/${id}`} className="stretched-link">
+                                <Link
+                                    to={`/hero/${id}`}
+                                    className="stretched-link"
+                                >
                                     Ver más
                                 </Link>
                             </div>
