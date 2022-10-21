@@ -1,15 +1,30 @@
 import { Route, Routes } from 'react-router';
-import { LoginPage } from '../auth';
+import { AuthRoutes } from '../auth/routes';
 import { HeroesRoutes } from '../heroes';
-import { Navbar } from '../ui/components';
+import { PrivateRoute, PublicRoute } from './';
 
 export const AppRouter = () => {
     return (
-        <>
-            <Routes>
-                <Route path="login" element={<LoginPage />} />
-                <Route path="/*" element={<HeroesRoutes />} />
-            </Routes>
-        </>
+        <Routes>
+            {/* Publicas */}
+            <Route
+                path="auth/*"
+                element={
+                    <PublicRoute>
+                        <AuthRoutes />
+                    </PublicRoute>
+                }
+            />
+
+            {/* Privadas */}
+            <Route
+                path="*"
+                element={
+                    <PrivateRoute>
+                        <HeroesRoutes />
+                    </PrivateRoute>
+                }
+            />
+        </Routes>
     );
 };
