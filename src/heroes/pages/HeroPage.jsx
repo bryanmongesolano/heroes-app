@@ -60,7 +60,7 @@ export const HeroPage = () => {
 
                     <div className="d-flex flex-wrap ps-3 gap-2">
                         {characters.map((character) => (
-                            <span className="bg-success bg-opacity-25 border border-success border-opacity-25 fw-semibold text-success rounded px-2">
+                            <span key={character} className="bg-success bg-opacity-25 border border-success border-opacity-25 fw-semibold text-success rounded px-2">
                                 {character}
                             </span>
                         ))}
