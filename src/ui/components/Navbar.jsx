@@ -23,7 +23,7 @@ export const Navbar = () => {
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark border-bottom shadow-sm">
             <div className="container-fluid">
                 <Link to="/" className="navbar-brand fw-semibold">
-                    Heroes APP - {user?.name}
+                    Heroes APP
                 </Link>
                 <button
                     className="navbar-toggler"
@@ -72,7 +72,7 @@ export const Navbar = () => {
                                 className="btn btn-link text-info text-decoration-none p-0 fw-semibold td-none"
                                 onClick={onLogout}
                             >
-                                Log out
+                                Log out, {user?.name}
                             </button>
                         </li>
                     </ul>
