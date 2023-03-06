@@ -18,6 +18,8 @@ export const HeroPage = () => {
 
     if (!hero) return <Navigate to="/" />;
 
+    const heroImageUrl = new URL(`../assets/heroes/${id}.jpg`, import.meta.url).href;
+
     return (
         <>
             <NavigateBackRow navigateBack={onNavigateBack} />
@@ -25,7 +27,7 @@ export const HeroPage = () => {
             <div className="row g-4">
                 <div className="col-sm-3" style={{zIndex: '2'}}>
                     <img
-                        src={`/src/heroes/assets/heroes/${id}.jpg`}
+                        src={heroImageUrl}
                         alt={hero.superhero}
                         className="img-thumbnail animate__animated animate__flip"
                     />

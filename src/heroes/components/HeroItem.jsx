@@ -7,8 +7,8 @@ export const HeroItem = ({
     alter_ego,
     first_appearance,
 }) => {
-    const heroImageUrl = `./src/heroes/assets/heroes/${id}.jpg`;
-
+    const heroImageUrl = new URL(`../assets/heroes/${id}.jpg`, import.meta.url).href;
+    
     return (
         <div className="col">
             <div className="card mb-3 shadow-sm animate__animated animate__fadeIn">
