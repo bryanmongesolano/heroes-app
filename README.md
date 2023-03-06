@@ -8,9 +8,9 @@ Small application that allows the user to see the main Heroes of Marvel and DC.
 
 ### Table of Contents
 
-1. [Technologies used](#-technologies-used)
-2. [Project goals](#-project-goals)
-3. [Concepts learned](#-concepts-learned)
+- [Technologies used](#-technologies-used)
+- [Project goals](#-project-goals)
+- [Concepts learned](#-concepts-learned)
 
 
 ## 💻 Technologies used
@@ -43,3 +43,9 @@ By doing so, I hoped to enhance my skills in frontend development and provide a 
 - History
 - Navigate
 - useNavigate
+
+
+## 🖼️ Screenshots
+| Home Page | Hero Page |
+|:-:|:-:|
+|![Home Page](https://i.postimg.cc/QN1WgHVv/2023-03-05-19h08-49-min.png)|![Hero Page](https://i.postimg.cc/pX37wcPm/2023-03-05-19h08-58-min.png)|
